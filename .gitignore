@@ -2,3 +2,4 @@ vendor/
 .env*
 .phive
 tools/
+*.sqlite3
