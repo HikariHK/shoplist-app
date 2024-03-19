@@ -2,7 +2,7 @@
 
 namespace App;
 
-require_once dirname(__DIR__) .'/src/models/item.php';
+require_once 'src/models/item.php';
 
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\Depends;
