@@ -16,7 +16,7 @@ final class User
     
     function __get(string $name)
     {
-        if (isset($this->$name)) {
+        if (property_exists($this, $name)) {
             return $this->$name;
         }
         throw new Exception('Propriedade inexistente.');

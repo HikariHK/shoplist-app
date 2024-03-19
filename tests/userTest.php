@@ -10,7 +10,8 @@ final class UserTest extends TestCase
 {
     function testCreatesAnUser()
     {
-        $user = User::create((string) time());
-        $this->assertInstanceOf(User::class, $user);
+        $token = (string) time();
+        $user = User::create($token);
+        $this->assertEquals($user->_token, $token);
     }
 }
